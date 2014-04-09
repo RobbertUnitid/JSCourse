@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Film awesomeness</title>
+	<meta name="description" content="" />
+	<meta name="author" content="Robbert Ouwerkerk" />
+	<link href="static/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="sidebar_avatar"></div>
+            <div class="sidebar_author">
+                <h2>Robbert Ouwerkerk</h2>
+                <span class="sidebar_author_company">UNITiD</span>
+                </div>
+            <div class="navigation">
+                <nav>
+                    <a class="button" href="#about">About</a>
+                    <a class="button" href="#movies">Movies</a></li>
+                </nav>
+            </div>
+            
+        </div>
+        <div class ="pageContent">
+            <header>
+                <h1>Movie Awesomeness</h1>
+            </header>
+            
+            <section id="about">
+                <h2 data-bind="title"></h2>
+                <p data-bind="description"></p>
+            </section>
+            
+            <section id="movies" class="row container">
+                <wop class="movie">
+                    <img class="thumb" src=""/>
+                    <h2 class="movieTitle"></h2>
+                    <p class="releaseDate"></p>
+                    <p data-bind="movieDescription"></p>
+                </wop>
+            </section>
+        </div>
+    </div>
+    
+<script src="static/js/vendor/hammer.js" type="text/javascript"></script>
+<script src="static/js/vendor/routie.js" type="text/javascript"></script>
+<script src="static/js/vendor/transparency.min.js" type="text/javascript"></script>
+<script src="static/js/app.js" type="text/javascript"></script>
+    
+</body>
+    
+</html>
